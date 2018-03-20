@@ -5,17 +5,15 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 
 public class MainActivity extends Activity {
 
     private static final String TAB_KEY_INDEX = "tab_key";
-    private Fragment breakfastFragment;
-    private Fragment lunchFragment;
-    private Fragment dinnerFragment;
-    private Fragment snackFragment;
+    private Fragment appetizerFragment;
+    private Fragment checkoutFragment;
+    private Fragment dessertFragment;
+    private Fragment entreeFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,26 +24,26 @@ public class MainActivity extends Activity {
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(false);
 
-        ActionBar.Tab breakfastTab = actionBar.newTab().setText(getString(R.string.ui_tabname_breakfast));
-        ActionBar.Tab lunchTab = actionBar.newTab().setText(getString(R.string.ui_tabname_lunch));
-        ActionBar.Tab snackTab = actionBar.newTab().setText(getString(R.string.ui_tabname_snack));
-        ActionBar.Tab dinnerTab = actionBar.newTab().setText(getString(R.string.ui_tabname_dinner));
+        ActionBar.Tab appetizerTab = actionBar.newTab().setText(getString(R.string.ui_tabname_appetizer));
+        ActionBar.Tab entreeTab = actionBar.newTab().setText(getString(R.string.ui_tabname_entree));
+        ActionBar.Tab dessertTab = actionBar.newTab().setText(getString(R.string.ui_tabname_dessert));
+        ActionBar.Tab checkoutTab = actionBar.newTab().setText(getString(R.string.ui_tabname_checkout));
 
-        breakfastFragment = new BreakfastFragment();
-        snackFragment = new SnackFragment();
-        lunchFragment = new LunchFragment();
-        dinnerFragment = new DinnerFragment();
+        appetizerFragment = new AppetizerFragment();
+        entreeFragment = new EntreeFragment();
+        checkoutFragment = new CheckoutFragment();
+        dessertFragment = new DessertFragment();
 
-        breakfastTab.setTabListener(new MyTabsListener(breakfastFragment, getApplicationContext()));
-        snackTab.setTabListener(new MyTabsListener(snackFragment, getApplicationContext()));
-        lunchTab.setTabListener(new MyTabsListener(lunchFragment, getApplicationContext()));
-        dinnerTab.setTabListener(new MyTabsListener(dinnerFragment, getApplicationContext()));
+        appetizerTab.setTabListener(new MyTabsListener(appetizerFragment, getApplicationContext()));
+        entreeTab.setTabListener(new MyTabsListener(entreeFragment, getApplicationContext()));
+        checkoutTab.setTabListener(new MyTabsListener(checkoutFragment, getApplicationContext()));
+        dessertTab.setTabListener(new MyTabsListener(dessertFragment, getApplicationContext()));
 
 
-        actionBar.addTab(breakfastTab);
-        actionBar.addTab(lunchTab);
-        actionBar.addTab(snackTab);
-        actionBar.addTab(dinnerTab);
+        actionBar.addTab(appetizerTab);
+        actionBar.addTab(entreeTab);
+        actionBar.addTab(dessertTab);
+        actionBar.addTab(checkoutTab);
 
         if(savedInstanceState!= null){
             actionBar.setSelectedNavigationItem(savedInstanceState.getInt(TAB_KEY_INDEX, 0));

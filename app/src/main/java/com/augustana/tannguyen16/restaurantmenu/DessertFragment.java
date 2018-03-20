@@ -10,10 +10,10 @@ import android.view.ViewGroup;
  * Created by tannguyen16 on 3/20/2018.
  */
 
-public class LunchFragment extends Fragment{
+public class DessertFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.fragment_lunch, container, false);
+        return inflater.inflate(R.layout.fragment_dessert, container, false);
     }
 
 }
