@@ -32,6 +32,15 @@ public class MainActivity extends Activity {
         snackFragment = new SnackFragment();
         lunchFragment = new LunchFragment();
         dinnerFragment = new DinnerFragment();
+
+        actionBar.addTab(breakfastTab);
+        actionBar.addTab(lunchTab);
+        actionBar.addTab(snackTab);
+        actionBar.addTab(dinnerTab);
+
+        if(savedInstanceState!= null){
+            actionBar.setSelectedNavigationItem(savedInstanceState.getInt(TAB_KEY_INDEX, 0));
+        }
     }
 
 }
