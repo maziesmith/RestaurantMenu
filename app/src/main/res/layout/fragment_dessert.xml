@@ -15,24 +15,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Chantal's New York Cheesecake"
-            android:textSize="30dp" />
+            android:text="1. Chantal's New York Cheesecake\n$5.00"
+            android:textSize="15dp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Chocolate Lovin Spooncake"
-            android:textSize="30dp"/>
+            android:text="2. Chocolate Lovin Spooncake\n$4.00"
+            android:textSize="15dp"/>
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Classic Oreo Icebox"
-            android:textSize="30dp"/>
+            android:text="3. Classic Oreo Icebox\n$3.00"
+            android:textSize="15dp"/>
     </RadioGroup>
     <ImageView
         android:id="@+id/imageView"

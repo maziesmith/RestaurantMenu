@@ -15,24 +15,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Chili Braised Beef Noodle Bowl"
-            android:textSize="30dp" />
+            android:text="1. Chili Braised Beef Noodle Bowl\n$5.00"
+            android:textSize="15dp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Fried Chicken Livers with Marinated Figs"
-            android:textSize="30dp"/>
+            android:text="2. Fried Chicken Livers with Marinated Figs\n$4.00"
+            android:textSize="15dp"/>
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Beef Short Ribs Braised in Red Wine"
-            android:textSize="30dp"/>
+            android:text="3. Beef Short Ribs Braised in Red Wine\n$3.00"
+            android:textSize="15dp"/>
     </RadioGroup>
     <ImageView
     android:id="@+id/imageView"

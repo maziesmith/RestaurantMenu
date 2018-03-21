@@ -17,24 +17,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Glazed Chicken Wing"
-            android:textSize="30dp" />
+            android:text="1. Glazed Chicken Wing\n$5.00"
+            android:textSize="15dp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Honey-Garlic Meatball"
-            android:textSize="30dp"/>
+            android:text="2. Honey-Garlic Meatball\n$4.00"
+            android:textSize="15dp"/>
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Avocado Salsa"
-            android:textSize="30dp"/>
+            android:text="3. Avocado Salsa\n$3.00"
+            android:textSize="15dp"/>
     </RadioGroup>
     <ImageView
         android:id="@+id/imageView"

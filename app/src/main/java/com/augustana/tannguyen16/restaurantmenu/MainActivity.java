@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void onButtonNameClick(View v){
+    public void onButtonClick(View v){
         if(v.getId() == R.id.button){
             Intent i = new Intent(MainActivity.this, CheckoutActivity.class);
             startActivity(i);
