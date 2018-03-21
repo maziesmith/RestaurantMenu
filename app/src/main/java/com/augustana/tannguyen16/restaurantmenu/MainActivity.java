@@ -5,7 +5,13 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -14,6 +20,10 @@ public class MainActivity extends Activity {
     private Fragment checkoutFragment;
     private Fragment dessertFragment;
     private Fragment entreeFragment;
+
+    private RadioGroup radioGroup;
+    private RadioButton radioButton;
+    private Button btnDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,14 +53,21 @@ public class MainActivity extends Activity {
         actionBar.addTab(appetizerTab);
         actionBar.addTab(entreeTab);
         actionBar.addTab(dessertTab);
-        actionBar.addTab(checkoutTab);
-
+        //actionBar.addTab(checkoutTab);
         if(savedInstanceState!= null){
             actionBar.setSelectedNavigationItem(savedInstanceState.getInt(TAB_KEY_INDEX, 0));
         }
     }
 
+    public void onButtonNameClick(View v){
+        if(v.getId() == R.id.button){
+            Intent i = new Intent(MainActivity.this, CheckoutActivity.class);
+            startActivity(i);
+        }
+    }
+
 }
+
 
 class MyTabsListener implements ActionBar.TabListener{
     public Fragment fragment;

@@ -3,14 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:layout_gravity="center"
+    android:background="@color/white"
     android:orientation="vertical">
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Glazed Chicken Wing"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Honey-Garlic Meatball"
+            android:textSize="30dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Avocado Salsa"
+            android:textSize="30dp"/>
+    </RadioGroup>
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:contentDescription="@string/ui_tabname_appetizer"
+        android:contentDescription="@string/ui_tabname_dessert"
         android:orientation="horizontal"
-        android:src="@drawable/breakfast" />
+        android:src="@drawable/lunch" />
 </LinearLayout>

@@ -9,12 +9,19 @@
     android:orientation="vertical"
     tools:context="com.augustana.tannguyen16.restaurantmenu.MainActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Out" />
+
     <LinearLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical">
+
     </LinearLayout>
 
 </LinearLayout>
